@@ -1,0 +1,86 @@
+:root{
+    --main-background-color: #171717;
+    --chat-box-color: #212121;
+    --user-text-box-color: #2F2F2F;
+    --chatbot-response-text-color: #CDCDCD;
+    --user-query-text-color: #ECECEC;
+    --user-query-input-box-color: #2f2f2f;
+    --montserrat-font: "Montserrat";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-background-color);
+    display: flex;
+    justify-content: center;
+}
+
+.chat-container{
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--chat-box-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-box{
+    height: 92%;
+    min-height: 88%;
+    width: 99%;
+    /* background-color: var(--chat-box-color); */
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.input-query-section{
+    max-height: 10%;
+    height: 6%;
+    width: 99%;
+    background-color: var(--user-query-input-box-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.chat-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat-form > textarea{
+    max-height: 100%;
+    width: 90%;
+    height: 40%;
+    background-color: var(--user-query-input-box-color);
+    border: none;
+    color: var(--user-query-text-color);
+    outline: none;
+    font-family: var(--montserrat-font);
+    resize: none;
+}
+.google-icon-holder{
+    width: 40px;
+    height: 40px;
+    background-color: #676767;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.material-symbols-outlined {
+    color: var(--user-query-input-box-color);
+}
