@@ -5,7 +5,7 @@ function userQuery({query}) {
     <>
         <div className="container-3">
             <div className="header">
-                You
+                <img className="KH-image" src="KH-logo.png" alt="" />
             </div>
             <div className="user-query-content">
                 {query}

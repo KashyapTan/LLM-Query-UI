@@ -23,3 +23,17 @@
     gap: 10px;
     margin-right: 5px;
 }
+.header{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.KH-image{
+    width: 45px;
+    height: 45px;
+}
