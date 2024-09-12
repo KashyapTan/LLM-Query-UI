@@ -1,8 +1,51 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# UI to query any Ollama model using local models 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prerequisites
+
+Download Ollama: [ollama.com/download](https://ollama.com/download)
+
+Download a Model: [ollama.com/library](https://ollama.com/library)
+
+After downloading, run the model locally:
+
+```bash
+  ollama run [model_name_here]
+```
+
+**Note: This project uses llama3.1. If you want to use a different model, you need to change the model in `server.py`**
+
+
+## Set Up
+
+Clone the project
+
+```bash
+  git clone https://github.com/KashyapTan/LLM-Query-UI.git
+```
+
+Install React dependencies
+
+```bash
+  npm install
+```
+
+Install Server requirements
+
+```bash
+  pip install -r requirements.txt
+```
+
+Start local host
+
+```bash
+  npm run dev
+```
+
+Start python server
+
+```bash
+  python server.py
+```
+
