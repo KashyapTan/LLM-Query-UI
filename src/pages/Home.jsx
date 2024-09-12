@@ -6,20 +6,18 @@ import ModelResponse from '../components/modelResponse';
 function Home() {
   const [systemPrompt, setSystemPrompt] = useState('');
   const [userQuery, setUserQuery] = useState('');
-  const [messages, setMessages] = useState([]); // Array to store all messages
+  const [messages, setMessages] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (userQuery.trim() === '') return;
 
-    // Store the user query first
     setMessages((prevMessages) => [
       ...prevMessages,
       { sender: 'user', message: userQuery }
     ]);
 
-    // Fetch the model's response
     fetch('http://localhost:5000/process-query', {
       method: 'POST',
       headers: {
@@ -32,13 +30,12 @@ function Home() {
     })
       .then((res) => res.json())
       .then((data) => {
-        // Append model's response to messages
         setMessages((prevMessages) => [
           ...prevMessages,
           { sender: 'model', message: data.response}
         ]);
 
-        setUserQuery(''); // Clear the input field after submission
+        setUserQuery('');
       })
       .catch((error) => {
         console.error('Error:', error);
