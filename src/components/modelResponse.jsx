@@ -1,17 +1,15 @@
+import '../CSS/modelResponse.css'
+import ReactMarkdown from 'react-markdown';
 
 function modelResponse({response}) {
-    var timestamp = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
   return (
     <>
-        <div className="container">
-            <div className="header">
-                Model
+        <div className="container-2">
+            <div className="header-2">
+                <img className='ollama-image' src="/ollama-picture.png" alt="Ollama" />
             </div>
             <div className="model-response-content">
-                {response}
-            </div>
-            <div className="time-stamp">
-                {timestamp}
+                <ReactMarkdown>{response}</ReactMarkdown>
             </div>
         </div>
     

@@ -1,0 +1,39 @@
+:root{
+    --main-background-color: #171717;
+    --chat-box-color: #212121;
+    --user-text-box-color: #2F2F2F;
+    --chatbot-response-text-color: #CDCDCD;
+    --user-query-text-color: #ECECEC;
+    --user-query-input-box-color: #2f2f2f;
+    --montserrat-font: "Montserrat";
+}
+
+.container-2{
+    max-width: 80%;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    color: var(--chatbot-response-text-color);
+    border-radius: 8px;
+    font-family: var(--montserrat-font);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.01);
+}
+.ollama-image{
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+.header-2{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
