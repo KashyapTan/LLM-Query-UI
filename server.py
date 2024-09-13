@@ -17,7 +17,7 @@ def process_query():
 
 def llama3_response(USER_QUERY, USER_SYSTEM_PROMPT):
     response = ollama.chat(
-            model='llama3.1', 
+            model='llama3.1', # You can change the model here to any model you have downloaded.
             messages=[
                 {
                     'role': 'system',
