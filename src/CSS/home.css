@@ -53,8 +53,8 @@ html::-webkit-scrollbar-track{
 }
 
 .chat-box{
-    height: 88%;
-    min-height: 80%;
+    height: 75%;
+    min-height: 75%;
     width: 99%;
     background-color: var(--chat-box-color);
     display: flex;
@@ -79,14 +79,17 @@ html::-webkit-scrollbar-track{
 }
 
 .input-query-section{
-    height: 6%;
+    height: 5%;
     width: 99%;
     background-color: var(--user-query-input-box-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
+    border-radius: 8px;
     margin-bottom: 5px;
+}
+.input-query-section:last-child{
+    height: 15%;
 }
 .chat-form{
     width: 100%;
@@ -108,6 +111,9 @@ html::-webkit-scrollbar-track{
     gap: 12px;
     overflow-x: hidden;
     flex-direction: column;
+}
+#chat-input{
+    height: 85%;
 }
 .google-icon-holder{
     width: 40px;
